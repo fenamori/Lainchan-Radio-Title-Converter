@@ -6,7 +6,7 @@ count = 0
 char_raw = ""
 
 if len(sys.argv) > 1: title_raw = str(sys.argv[1])
-else: title_raw = input("Enter string: \n")
+else: title_raw = input("Enter string: ")
 
 for x in title_raw:
 
@@ -26,4 +26,4 @@ for x in title_raw:
         case 0: title_unicode += x
 
 
-print("\n", title_unicode.replace("&#", "").replace(";", ""))
+print(title_unicode.replace("&#", "").replace(";", ""))
